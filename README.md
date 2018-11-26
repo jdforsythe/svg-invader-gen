@@ -2,6 +2,19 @@
 
 ![Code Coverage](./coverage/badge.svg)
 
+## Samples
+
+![Sprite 1](./examples/sprite-01.svg)
+![Sprite 2](./examples/sprite-02.svg)
+![Sprite 3](./examples/sprite-03.svg)
+![Sprite 4](./examples/sprite-04.svg)
+![Sprite 5](./examples/sprite-05.svg)
+![Sprite 6](./examples/sprite-06.svg)
+![Sprite 7](./examples/sprite-07.svg)
+![Sprite 8](./examples/sprite-08.svg)
+![Sprite 9](./examples/sprite-09.svg)
+![Sprite 10](./examples/sprite-10.svg)
+
 ## CLI Usage
 
 ### Installation
