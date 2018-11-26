@@ -1,6 +1,6 @@
 {
   "name": "svg-invader-gen",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Generate Space-Invader-like sprites as SVG images",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
