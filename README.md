@@ -45,7 +45,7 @@ svg-invader-gen -x 20 -y 20 -w 5 -h 5 -o svg
 ### Example with text output and non-symmetric:
 
 ```sh
-svg-invader-gen --pixel-width=20 --pixel-height=20 --pixels-wide=5 -pixels-high=5 --output-type=text --non-symmetric
+svg-invader-gen --output-type=text --non-symmetric
 ```
 
 ### Get the above help:
