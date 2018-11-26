@@ -1,0 +1,39 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "lib": true,
+    "package-lock.json": true
+  },
+
+  "typescript.suggest.autoImports": true,
+  "typescript.check.npmIsInstalled": true,
+  "typescript.disableAutomaticTypeAcquisition": false,
+  "typescript.suggest.paths": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.validate.enable": true,
+  "typescript.format.insertSpaceAfterTypeAssertion": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+
+  "tslint.ignoreDefinitionFiles": false,
+  "tslint.autoFixOnSave": true,
+  "tslint.exclude": "**/node_modules/**/*",
+  "tslint.configFile": "tslint.json",
+  "tslint.run": "onType",
+  "tslint.packageManager": "yarn",
+  "tslint.enable": true,
+
+  "prettier.arrowParens": "always",
+  "prettier.bracketSpacing": true,
+  "prettier.semi": true,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.trailingComma": "all",
+  "prettier.singleQuote": true,
+
+  "debug.inlineValues": true
+}

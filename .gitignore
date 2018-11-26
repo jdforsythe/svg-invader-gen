@@ -1,0 +1,20 @@
+## OS metadata
+.DS_Store
+Thumbs.db
+
+## Built TS files
+lib
+
+## Dependencies
+node_modules
+
+## Log files
+*.log
+
+## ts-node cache
+.ts-node
+
+# Code coverage reports
+.nyc_output
+coverage/*
+!coverage/badge.svg

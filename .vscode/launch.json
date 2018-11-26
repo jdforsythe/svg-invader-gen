@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Tests",
+      "type": "node",
+      "request": "launch",
+      "runtimeVersion": "10.11.0",
+      "args": [
+        "-r",
+        "ts-node/register",
+        "**/*.spec.ts",
+      ],
+      "cwd": "${workspaceRoot}",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/mocha",
+      "protocol": "inspector",
+      "sourceMaps": true,
+      "outputCapture": "std",
+      "outFiles": [
+        ".ts-node/**"
+      ]
+    },
+    {
+      "name": "Debug",
+      "type": "node",
+      "request": "launch",
+      "runtimeVersion": "8.9.4",
+      "args": [
+        "-r",
+        "ts-node/register",
+        "src/index.ts"
+      ],
+      "cwd": "${workspaceFolder}",
+      "protocol": "inspector",
+      "sourceMaps": true,
+      "outFiles": [
+        ".ts-node/**"
+      ],
+      "outputCapture": "std"
+    }
+  ]
+}

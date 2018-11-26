@@ -1,0 +1,75 @@
+{
+  "name": "svg-invader-gen",
+  "version": "0.0.1",
+  "description": "Generate Space-Invader-like sprites as SVG images",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && npm install && npm run tslint && npm run test && npm run raw-build",
+    "clean": "shx rm -rf lib && shx rm -rf node_modules",
+    "raw-build": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "nyc mocha --opts mocha.opts"
+  },
+  "bin": {
+    "svg-invader-gen": "lib/bin/generate"
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdforsythe/svg-invader-gen.git"
+  },
+  "keywords": [
+    "svg",
+    "sprite"
+  ],
+  "author": "Jeremy Forsythe <jdforsythe@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdforsythe/svg-invader-gen/issues"
+  },
+  "homepage": "https://github.com/jdforsythe/svg-invader-gen#readme",
+  "nyc": {
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "**/*.spec.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "json-summary",
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "dependencies": {
+    "cli": "^1.0.1",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/cli": "^0.11.19",
+    "@types/lodash": "^4.14.118",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.10",
+    "chai": "^4.2.0",
+    "make-coverage-badge": "^1.0.1",
+    "mocha": "^5.2.0",
+    "mocha-typescript": "^1.1.17",
+    "nyc": "^13.1.0",
+    "shx": "^0.3.2",
+    "source-map-support": "^0.5.9",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.1.6"
+  }
+}
