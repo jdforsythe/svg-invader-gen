@@ -36,18 +36,19 @@ svg-invader-gen [OPTIONS]
 - `-n`, `--non-symmetric` [FLAG] Don't mirror the sprite across the vertical axis
 - `-o [TYPE]`, `--output-type=[TYPE]` [STRING] Output type: "svg", "html", or "text" (Default is "svg")
 
-Example with defaults:
+### Example with defaults:
 
 ```sh
 svg-invader-gen -x 20 -y 20 -w 5 -h 5 -o svg
 ```
 
-Example with text output and non-symmetric:
+### Example with text output and non-symmetric:
+
 ```sh
 svg-invader-gen --pixel-width=20 --pixel-height=20 --pixels-wide=5 -pixels-high=5 --output-type=text --non-symmetric
 ```
 
-Get the above help:
+### Get the above help:
 
 ```sh
 svg-invader-gen --help
