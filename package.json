@@ -1,11 +1,11 @@
 {
   "name": "svg-invader-gen",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generate Space-Invader-like sprites as SVG images",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "build": "npm run clean && npm install && npm run tslint && npm run test && npm run raw-build",
+    "build": "npm run clean && npm install && npm run tslint && npm run test && make-coverage-badge && npm run raw-build",
     "clean": "shx rm -rf lib && shx rm -rf node_modules",
     "raw-build": "tsc",
     "tslint": "tslint -c tslint.json -p tsconfig.json",

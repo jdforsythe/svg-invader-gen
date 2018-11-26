@@ -5,7 +5,7 @@ import { hexFromColor } from '../utils';
 import { SpriteOptions } from '../interfaces/options.interface';
 
 const getRect = (x: number, y: number, w: number, h: number, f: string) => {
-  return `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="#f" />`;
+  return `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="#${f}" />`;
 };
 
 /**

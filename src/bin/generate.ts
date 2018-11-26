@@ -2,12 +2,10 @@
 
 import * as cli from 'cli';
 
-import {
-  Sprite,
-  getSprite,
-  outputSprite,
-  SpriteOptions,
-} from '../index';
+import { Sprite } from '../interfaces/sprite.interface';
+import { SpriteOptions } from '../interfaces/options.interface';
+import { getSprite } from '../generate';
+import { outputSprite } from '../output';
 
 cli.enable('help', 'version');
 
@@ -30,12 +28,12 @@ cli.main((args, opts) => {
     pixelHeight: opts['pixel-height'],
     pixelsWide: opts['pixels-wide'],
     pixelsHigh: opts['pixels-high'],
-    verticalSymmetry: !!opts['non-symmetric'],
+    verticalSymmetry: !opts['non-symmetric'],
     outputType: opts['output-type'],
   };
 
   const sprite: Sprite = getSprite(spriteOpts);
-  const spriteStr = outputSprite(opts, sprite);
+  const spriteStr = outputSprite(spriteOpts, sprite);
 
   cli.output(spriteStr);
 });
