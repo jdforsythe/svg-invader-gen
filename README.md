@@ -64,6 +64,8 @@ npm install -S svg-invader-gen
 
 ### JS
 
+**index.js**
+
 ```js
 const invaderGen = require('svg-invader-gen');
 
@@ -87,7 +89,13 @@ const go = () => {
 go();
 ```
 
+```sh
+node index.js
+```
+
 ### TypeScript
+
+**index.ts**
 
 ```ts
 import { Sprite, SpriteOptions, getSprite, outputSprite } from 'svg-invader-gen';
@@ -109,4 +117,8 @@ const go = () => {
 };
 
 go();
+```
+
+```sh
+ts-node index.ts
 ```
