@@ -7,6 +7,7 @@ lib
 
 ## Dependencies
 node_modules
+!docs/node_modules
 
 ## Log files
 *.log
