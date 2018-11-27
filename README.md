@@ -125,4 +125,4 @@ ts-node index.ts
 
 ## Browser Usage
 
-See [Demo](https://jdforsythe.github.io/svg-invader-gen/) for browser usage. Source is in `gh-pages` folder.
+See [Demo](https://jdforsythe.github.io/svg-invader-gen/) for browser usage. Source is in `docs` folder.
