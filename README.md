@@ -54,7 +54,7 @@ svg-invader-gen --output-type=text --non-symmetric
 svg-invader-gen --help
 ```
 
-## Module usage
+## Node usage
 
 ### Installation
 
@@ -122,3 +122,7 @@ go();
 ```sh
 ts-node index.ts
 ```
+
+## Browser Usage
+
+See [Demo](https://jdforsythe.github.io/svg-invader-gen/) for browser usage. Source is in `gh-pages` folder.

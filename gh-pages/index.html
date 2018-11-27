@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- based on https://github.com/BlackrockDigital/startbootstrap-one-page-wonder -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sprite in Browser</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">SVG Invader Sprite Generator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/jdforsythe/svg-invader-gen">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.paypal.me/jdforsythe/20"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Description</h2>
+            <p>
+              This module generates SVG sprites that look similar to Space Invaders era sprites. It can be used
+              as a command line application to generate sprites, or loaded as a node module in Node.js Javascript
+              or Typescript apps, or with webpack/browserify/etc. in the browser.
+            </p>
+
+            <h2>Node.js Usage</h2>
+            <p>
+              You can view the README on <a href="https://github.com/jdforsythe/svg-invader-gen">GitHub</a> for
+              command line and Node.js (Javascript and Typescript) documentation.
+            </p>
+
+            <h2>Browser Usage</h2>
+            <p>
+              Click the button below to generate a new set of sprites. This generation is happening in the browser.
+              You can view the source of this page on <a href="https://github.com/jdforsythe/svg-invader-gen">GitHub</a>
+              under the "gh-pages" folder.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row mb-3 sprites pt-3 pl-3 pr-3 pb-3">
+          <div class="col-sm-3 sprite" id="sprite-1"></div>
+          <div class="col-sm-3 sprite" id="sprite-2"></div>
+          <div class="col-sm-3 sprite" id="sprite-3"></div>
+          <div class="col-sm-3 sprite" id="sprite-4"></div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-5"></div>
+          <div class="col-lg-2">
+            <button id="refresh" class="btn btn-info btn-lg rounded-pill">Refresh</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5 bg-black">
+      <div class="container">
+        <p class="m-0 text-center text-white small">Copyright &copy; 2018</p>
+      </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="lib/sprite.js" defer></script>
+  </body>
+</html>
